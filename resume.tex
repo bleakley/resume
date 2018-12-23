@@ -1,0 +1,156 @@
+%-------------------------
+% Resume in Latex
+% Author : Brian Bleakley, template by Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Brian Bleakley} & \href{mailto:brianbleakley@gmail.com}{brianbleakley@gmail.com}\\
+  \href{https://github.com/bleakley}{github.com/bleakley} & 619-318-6480 \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Recursion Pharmaceuticals}{Salt Lake City, UT}
+      {Software Engineer}{Feb 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Experiment Design Tools}
+          {Extended Go API and developed an accompanying React app for data scientists and biologists to design cell culture plate layouts for experiments to identify disease phenotypes and treatment candidates using microscopy.}
+        \resumeItem{Image QC \& Feature Labeling}
+          {Developed ClojureScript/Reframe application with a Flask backend to review images from large microscopy experiments, perform live custom compositing of multi-channel images, overlay cell segmentations, and apply labels to images and image regions for use in training classifiers.}
+        \resumeItem{Infrastructure \& Support Tools}
+          {Created various microservices and apps in Go and Flask to support our image processing pipeline. Created various Splunk dashboards with custom search commands to track experiment status. Configured Travis to automatically deploy apps to Kubernetes on merge to master.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UCLA Cardiac Proteomics and Signalling Laboratory}{Los Angeles, CA}
+      {Software Engineer}{Jan 2013 - Jan 2016}
+      \resumeItemListStart
+        \resumeItem{ProTurn}
+          {Developed a command line and GUI application in Java to perform protein turnover analysis on heavy water labeled mass spectroscopy data, and display data in graphical and tabular formats. Built with JavaFX and Apache Commons Math. Coauthored four related publications, viewable at \href{https://orcid.org/0000-0002-9930-2169}{orcid.org/0000-0002-9930-2169}}
+        \resumeItem{Batch Processing Manager}
+          {Set up and configured a local cluster to run protein library search batch processing (OpenPBS) jobs. Developed a GUI application in Java to create and monitor jobs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {US Navy}{Apra Harbor, Guam}
+      {Submarine Reactor Operator}{Jan 2006 - July 2011}
+      \resumeItemListStart
+        \resumeItem{Watchstanding}
+          {Stood over 5,000 hours of watch as Shutdown Reactor Operator, Reactor Operator,
+          Reactor Technician and Electrical Operator while S6G reactor plant was critical and
+          shutdown. Participated in numerous sophisticated drills and casualty scenarios.}
+        \resumeItem{Maintenance}
+          {Conducted repairs and preventative maintenance on reactor instrumentation and control systems.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Los Angeles}{Los Angeles, CA}
+      {Bachelor of Science in Physics}{2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------Projects-----------------
+\section{Hackathons}
+  \resumeSubHeadingListStart
+    \resumeSubItem{7DRL Game Jam 2018}
+      {JavaScript roguelike game in which you fly a spaceship and struggle against the conservation of momentum. Created in 7 days, placing 24 out of 147.}
+    \resumeSubItem{7DRL Game Jam 2017}
+      {JavaScript roleplaying game in which you explore a randomly generated continent, build an army,  and conquer cities. Created in 7 days.}
+    \resumeSubItem{2015 Big Data to Knowledge Hackathon}
+      {Won \$500 first prize for Android cooperative running app that used GPS to support friends running in sync remotely.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
