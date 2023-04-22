@@ -36,6 +36,12 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  urlcolor=MidnightBlue
+}
+
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
@@ -85,22 +91,22 @@
   
     \resumeSubheading
       {Google}{Kirkland, WA}
-      {Software Engineer}{Jan 2021 - Present}
+      {Software Engineer}{Jan 2021 - Mar 2023}
       \resumeItemListStart
         \resumeItem{Vertex AI Geoexpansion}
-          {Deployed the Vertex AI Training and Vertex Vizier Hyperparameter Tuning services to 14 new regions around the world. Wrote scripts and playbooks to significantly reduce the time required to deploy both products.}
+          {Deployed the Vertex AI Training and Vertex Vizier Hyperparameter Tuning services to 14 new regions around the world. Wrote scripts and playbooks to significantly reduce the manual effort required to deploy both products.}
         \resumeItem{Google Cloud Game Servers}
-          {Added functionality to Google Cloud Game Servers to automatically install Agones on user-created Kubernetes clusters and perform required version updates over time.}
+          {Added functionality to Google Cloud Game Servers application in Golang to automatically install Agones on user-created Kubernetes clusters and perform required version updates over time.}
       \resumeItemListEnd
       
     \resumeSubheading
-      {Polyhedron Online}{Salt Lake City, UT}
-      {Creator \& Software Engineer}{Sept 2019 - Jan 2022}
+      {Independent Game Developer}{Salt Lake City, UT}
+      {Creator \& Software Engineer}{Sept 2019 - Present}
       \resumeItemListStart
         \resumeItem{Virtual Tabletop}
-          {Developed a virtual gaming tabletop for users to play RPGs and miniatures games over a websocket. The VTT can build 3d maps from layers of 2d images using a novel terrain building system, and is rendered using PixiJS in a React app.}
-        \resumeItem{Infrastructure}
-          {Built a microservice application from scratch, using Node.js, MongoDB, and Kubernetes, hosted on Amazon EKS.}
+          {Developed a virtual gaming tabletop for users to play RPGs and miniatures games over a websocket. The VTT can build 3d maps from layers of 2d images using a novel terrain building system, and is rendered using PixiJS in a React app. Built a microservice application from scratch, using Node.js, MongoDB, and Kubernetes, hosted on Amazon EKS. \href{https://www.youtube.com/@polyhedrononline312/videos}{[video demo]}}
+        \resumeItem{Warpvector}
+          {Built a physics-based roguelike space adventure game in vanilla JS playable either as a browser game or Electron app. Gameplay, including art and animations, is rendered solely via DOM manipulation. \href{https://store.steampowered.com/app/2135870/WarpVector/}{[Steam page]}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -122,7 +128,7 @@
         \resumeItem{Image QC \& Feature Labeling}
           {Developed ClojureScript/Reframe application with a Flask backend to review images from large microscopy experiments, perform live custom compositing of multi-channel images, overlay cell segmentations, and apply labels to images and image regions for use in training classifiers.}
         \resumeItem{Infrastructure \& Support Tools}
-          {Created various microservices and apps in Go and Flask to support our image processing pipeline. Created various Splunk dashboards with custom search commands to track experiment status. Configured Travis to automatically deploy apps to Kubernetes on merge to master.}
+          {Created various microservices and apps in Go and Flask to support our image processing pipeline. Created various Splunk dashboards with custom search commands to track experiment status. Configured CI/CD with Travis to automatically deploy apps to Kubernetes on merge to master.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -142,7 +148,7 @@
         \resumeItem{Watchstanding}
           {Stood over 5,000 hours of watch as Shutdown Reactor Operator, Reactor Operator,
           Reactor Technician and Electrical Operator while S6G reactor plant was critical and
-          shutdown. Participated in numerous sophisticated drills and casualty scenarios.}
+          shutdown.}
         \resumeItem{Maintenance}
           {Conducted repairs and preventative maintenance on reactor instrumentation and control systems.}
       \resumeItemListEnd
